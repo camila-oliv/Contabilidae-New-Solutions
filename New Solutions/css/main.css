@@ -1,0 +1,393 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.item {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+#sobre-nos {
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    text-align: left; /* Centraliza o texto dentro do contêiner */*/
+}
+
+.secao {
+    max-width: 800px; /* Define uma largura máxima para o conteúdo (opcional) */
+}
+
+header h1 {
+    float: center;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: #111733;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f78418;
+}
+
+section {
+    padding: 20px 0;
+    background-color: #111733;
+    weight: 100%;
+}
+
+section h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #fff;
+}
+
+footer {
+    background-color: #fff;
+    color: #111733;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 1px;
+    color: #111733; /* Define a cor do texto */
+}
+
+.header-container {
+    display: flex; /* Usa o Flexbox para layout */
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between; /* Distribui espaço entre os itens */
+    max-width: 1700px; /* Largura máxima do cabeçalho (opcional) */
+    font-size: 25px;
+    margin: 10 auto; /* Centraliza o cabeçalho horizontalmente na página */
+}
+
+.logo {
+    flex: 1; /* Permite que a logo ocupe uma parte do espaço disponível */
+}
+
+.logo img {
+    max-width: 400px; /* Define a largura máxima da logo */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.header-content {
+    flex: 3; /* Permite que o conteúdo ocupe o restante do espaço disponível */
+    text-align: center; /* Centraliza o texto e a navegação dentro do contêiner */
+}
+
+.narrow-paragraph {
+    margin-left: 10px; /* Reduz o espaço à esquerda do parágrafo */
+    margin-right: 10px; /* Reduz o espaço à direita do parágrafo */
+    padding-left: 10px; /* Reduz o preenchimento à esquerda do parágrafo */
+    padding-right: 10px; /* Reduz o preenchimento à direita do parágrafo */
+}
+
+.justificado {
+    text-align: justify; /* Justifica o texto dentro do parágrafo */
+}
+
+.footer {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.section-title {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+    color: #ffffff;
+}
+.values-list li {
+    background: url('https://img.icons8.com/ios-filled/50/000000/checkmark.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.blue-bar {
+    background-color: #111733; /* Cor azul, você pode ajustar conforme necessário */
+    height: 20px; /* Ajuste a altura da barra conforme desejado */
+    width: 100%; /* Ocupa toda a largura da página */
+    /* Outros estilos opcionais */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Cor do texto, se houver algum */
+    font-size: 16px; /* Tamanho da fonte, se houver algum texto */
+    font-family: Arial, sans-serif; /* Fonte do texto */
+}
+
+.form-container {
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 950px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente apenas */
+}
+
+button {
+    background-color: #111733;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #111733;
+}
+
+.banner {
+    position: relative; /* Necessário para posicionar o botão dentro do banner */
+    text-align: center; /* Centraliza a imagem do banner */
+    margin: 0px 0; /* Margem acima e abaixo do banner */
+}
+
+.banner img {
+    width: 100%; /* Faz com que a imagem do banner se ajuste à largura do container */
+    max-width: 1960px; /* Define a largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços em branco ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    position: relative; /* Permite posicionar elementos dentro do contêiner */
+    height: 500px; /* Define a altura do contêiner do banner */
+    overflow: hidden;
+}
+
+/* Estilo para o botão no banner */
+.banner-button {
+    position: absolute; /* Permite posicionar o botão em relação ao banner */
+    top: 85%; /* Alinha verticalmente no meio */
+    left: 85%; /* Alinha horizontalmente no meio */
+    transform: translate(-50%, -50%); /* Ajusta a posição para centralizar o botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #f78418; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    font-weight: bold; /* Coloca o texto do botão em negrito */
+    z-index: 2;
+}
+
+.banner-button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.banner-background {
+    position: absolute; /* Permite posicionar o fundo em relação ao banner */
+    top: 75%; /* Alinha verticalmente no meio */
+    left: 85%; /* Alinha horizontalmente no meio */
+    transform: translate(-50%, -50%); /* Ajusta a posição para centralizar o fundo */
+    width: 25%; /* Largura do fundo azul */
+    height: 35%; /* Altura do fundo azul */
+    background-color: rgba(0, 86, 179, 0.3); /* Cor azul com transparência */
+    display: flex; /* Usa flexbox para centralizar o texto */
+    align-items: center; /* Alinha o texto verticalmente no meio */
+    justify-content: center; /* Alinha o texto horizontalmente no meio */
+    z-index: 1; /* Garante que o fundo azul esteja atrás do botão */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao fundo */
+}
+
+.banner-text {
+    color: #fff; /* Cor do texto em branco */
+    font-size: 25px; /* Tamanho da fonte do texto */
+    font-weight: bold; /* Texto em negrito */
+    text-align: justify; /* Justifica o texto */
+    text-align-last: center; /* Alinha o último linha centralizado */
+    max-width: 90%; /* Limita a largura do texto */
+    margin: 0 auto; /* Centraliza o texto dentro da camada de fundo */
+    margin-top: -50px;
+    line-height: 1.4; /* Ajusta a altura da linha para melhor legibilidade */
+}
+
+.about-owner {
+    display: flex; /* Usa flexbox para posicionar foto e texto lado a lado */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    margin: 0px auto; /* Margem automática para centralizar a seção */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 1900px; /* Largura máxima da seção */
+    background-color: #f9f9f9; /* Cor de fundo leve para destacar a seção */
+    border-radius: 8px; /* Bordas arredondadas da seção */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    text-align: center;
+}
+
+.owner-photo {
+    flex: 1; /* A foto ocupa 1 parte do espaço disponível */
+    padding-left: 100px; /* Espaço entre a foto e o texto */
+    /* Ajustar outros estilos conforme necessário */
+}
+
+.owner-photo img {
+    max-width: 40%; /* Ajusta a largura da imagem para o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Arredonda as bordas da imagem */
+    margin-left: 100px; /* Adiciona espaço à esquerda da imagem */
+}
+
+.owner-info {
+    flex: 1; /* O texto ocupa 2 partes do espaço disponível */
+}
+
+.owner-info h2 {
+    margin-top: 0; /* Remove a margem superior do título */
+    font-size: 40px; /* Tamanho da fonte do título */
+    color: #111733; /* Cor do título */
+}
+
+.owner-info p {
+    text-align: justify; /* Justifica o texto para que ele se estenda de um lado ao outro do contêiner */
+    font-size: 16px; /* Tamanho da fonte do texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    color: #111733; /* Cor do texto */
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
+
+.services {
+    background-color: #111733; /* Fundo azul escuro */
+    color: #fff; /* Cor do texto em branco */
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.services h2 {
+    font-size: 40px; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.services-container {
+    display: flex; /* Usa flexbox para layout dos quadros */
+    justify-content: center; /* Centraliza os quadros horizontalmente */
+    gap: 60px; /* Espaçamento entre os quadros */
+    flex-wrap: wrap; /* Permite que os quadros se movam para a linha seguinte em telas menores */
+}
+
+.service-item {
+    background-color: #fff; /* Cor de fundo dos quadros */
+    border-radius: 8px; /* Bordas arredondadas dos quadros */
+    padding: 20px; /* Espaçamento interno dos quadros */
+    flex: 1; /* Permite que os quadros se ajustem ao espaço disponível */
+    max-width: 300px; /* Largura máxima dos quadros */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+.service-item h3 {
+    font-size: 22px; /* Tamanho do título do quadro */
+    margin-bottom: 10px; /* Espaçamento abaixo do título do quadro */
+    color: #111733;
+}
+
+.service-item p {
+    font-size: 16px; /* Tamanho da fonte do texto dos quadros */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+    color: #111733;
+}
+
+.services-intro {
+    padding: 40px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px; /* Tamanho da fonte do texto */
+    color: #fff; /* Cor do texto */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    max-width: 1100px; /* Largura máxima para o parágrafo */
+    text-align: justify; /* Justifica o texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+.cta-container {
+    text-align: center; /* Centraliza o botão horizontalmente */
+    margin-top: 20px; /* Adiciona um espaço acima do botão */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f78418; /* Altere a cor de fundo conforme necessário */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Cor do botão quando o mouse passa sobre ele */
+}

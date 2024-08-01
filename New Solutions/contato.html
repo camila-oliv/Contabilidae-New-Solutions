@@ -1,0 +1,66 @@
+<html lang="pt-BR">
+<head>
+	<link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidade New Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./img/neo-solutions.png" height="1200" width="300" alt="Logo da Contabilidade New Solutions">
+            </div>
+            <div class="header-content">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">New Solutions</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="sobre-nos">
+        <div class="item">
+            <h2 class="section-title">Fale Conosco</h2>
+            <p class="narrow-paragraph">Preencha os campos abaixo e nos envie sua mensagem. Teremos muito prazer em atendê-lo.</p>
+        </div>
+        <div class="form-container">
+            <h1>Formulário de Contato</h1>
+            <form action="enviar.php" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>  
+
+    <footer>
+        <div class="footer">
+            <p>&copy; <strong>2024 Contabilidade New Solutions. Todos os direitos reservados.</strong></p>
+        </div>
+    </footer>
+</body>
+</html>
