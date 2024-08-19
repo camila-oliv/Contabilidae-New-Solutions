@@ -10,31 +10,48 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="./img/neo-solutions.png" height="1200" width="300" alt="Logo da Contabilidade New Solutions">
+                <a href="index.html">
+                    <img src="./img/neo-solutions.png" alt="Logo da Contabilidade New Solutions">
+                </a>
             </div>
             <div class="header-content">
-                <nav>
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+                <nav class="main-nav">
                     <ul>
-                        <li><a href="index.html">New Solutions</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="index.html">NEW SOLUTIONS</a></li>
+                        <li><a href="#servicos">SERVIÇOS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+    
+            menuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+            });
+        });
+    </script>
     <div class="banner">
-        <img src="./img/banner-500px.png" alt="Banner Promocional">
+        <img src="./css/banner600px.png" alt="Banner Promocional">
         <div class="banner-background">
             <div class="banner-text">A solução que sua empresa precisa está a um clique de distância.</div>
         </div>
-        <a href="#cta" class="banner-button">Fale conosco pelo WhatsApp</a>
+        <a href="https://wa.me/5537998340182" class="banner-button">Fale conosco pelo WhatsApp</a>
     </div>
     <section class="about-owner">
         <div class="owner-info">
             <h2>Sobre Nós</h2>
-            <p>A Contabilidade New Solutions foi fundada em 2023 com a missão de oferecer serviços contábeis de alta qualidade para empresas de todos os tamanhos. Sob a liderança de Patrícia Suellen, uma profissional com formação em Ciências Contábeis e vasta experiência no setor, destacamo-nos pela precisão e excelência na prestação de serviços.
+            <p>A Contabilidade New Solutions foi fundada em 2021 com a missão de oferecer serviços contábeis de alta qualidade para empresas de todos os tamanhos. Sob a liderança de Patrícia Suellen, uma profissional com formação em Ciências Contábeis e vasta experiência no setor, destacamo-nos pela precisão e excelência na prestação de serviços.
 
                 Patrícia Suellen combina conhecimento técnico com uma visão estratégica, proporcionando soluções contábeis que ajudam nossos clientes a alcançar seus objetivos de negócios. Seu compromisso com a integridade e a inovação contínua tem sido essencial para o crescimento e sucesso da nossa empresa.
                 
@@ -43,13 +60,13 @@
                 Estamos aqui para apoiar sua empresa com soluções contábeis confiáveis e eficientes, contribuindo para seu crescimento e sucesso sustentável.</p>
         </div>
         <div class="owner-photo">
-            <img src="./img/dona.png" alt="Foto da Proprietária">
+            <img src="./img/dona3.png" alt="Foto da Proprietária">
         </div>
     </section>
     <section id="servicos" class="services">
         <h2>Serviços Prestados</h2>
         <p class="services-intro">
-            A Contabilidade New Solutions, fundada em 2023 e liderada por Patrícia Suellen, oferece serviços contábeis especializados para empresas e indivíduos. Com expertise em abertura, alteração e regularização de empresas, além de consultoria para MEI e serviços de declaração de impostos, nossa missão é garantir eficiência e conformidade. Também atendemos autônomos e cuidamos da terceirização do departamento pessoal, sempre com compromisso com a excelência e inovação.
+            A Contabilidade New Solutions, fundada em 2021 e liderada por Patrícia Suellen, oferece serviços contábeis especializados para empresas e indivíduos. Com expertise em abertura, alteração e regularização de empresas, além de consultoria para MEI e serviços de declaração de impostos, nossa missão é garantir eficiência e conformidade. Também atendemos autônomos e cuidamos da terceirização do departamento pessoal, sempre com compromisso com a excelência e inovação.
         </p>
         <div class="services-container">
             <div class="service-item">
@@ -61,14 +78,71 @@
                 <p>Oferecemos suporte completo para a declaração do IR, regularização do CPF e serviços MEU INSS, facilitando suas pendências e garantindo conformidade.</p>
             </div>
             <div class="service-item">
+                <h3>Autônomo ou Profissional Liberal</h3>
+                <p>Oferecemos assessoria completa para autônomos e profissionais liberais, incluindo preenchimento do carne-leão, recolhimento do INSS e regularização na prefeitura.</p>
+            </div>
+            <div class="service-item">
+                <h3>Legalização de Empresas</h3>
+                <p>Cuidamos de toda a legalização da sua empresa, desde abertura e alteração até encerramento, regularização, obtenção de certidões negativas e registro de marca.</p>
+            </div>
+            <div class="service-item">
                 <h3>Terceirzação de Departamento Pessoal</h3>
                 <p>Gerenciamos cadastro de empregador, admissão/rescisão, obrigações acessórias, folha de pagamento, cálculo de férias e 13º salário com precisão e eficiência.</p>
             </div>
         </div>
         <div class="cta-container">
-            <a href="#contact" class="cta-button">Fale Conosco pelo WhatsApp</a>
+            <a href="https://wa.me/5537998340182" class="cta-button">Fale Conosco pelo WhatsApp</a>
         </div>
-    </section>  
+    </section>
+    <section id="blog" class="blog-articles">
+        <h2>Blog</h2>
+        <div class="articles-container">
+            <div class="article-item">
+                <a href="artigo1.html">
+                <img src="./img/artigo1.png" alt="Imagem do Artigo 1">
+                </a>
+                <h3>5 Passos para abrir a sua empresa</h3>
+                <p>
+                    Abrir uma empresa pode parecer desafiador, mas um planejamento cuidadoso e os passos certos tornam o processo mais fácil. Confira cinco passos simples para transformar sua ideia em realidade de forma eficaz e organizada.</p>
+                <a href="artigo1.html" class="read-more">Leia mais</a>
+            </div>
+            <div class="article-item">
+                <a href="artigo2.html">
+                <img src="./img/artigo2.png" alt="Imagem do Artigo 2">
+                </a>
+                <h3>Conheça as Principais Vantagens de Ser MEI e Como Isso Pode Transformar Seu Negócio</h3>
+                <p>O Microempreendedor Individual (MEI) simplifica a formalização de negócios e oferece benefícios que facilitam a gestão. É uma opção atraente para muitos empreendedores devido às suas vantagens práticas.</p>
+                <a href="artigo2.html" class="read-more">Leia mais</a>
+            </div>
+            <div class="article-item">
+                <a href="artigo3.html">
+                <img src="./img/artigo3.png" alt="Imagem do Artigo 3">
+                </a>
+                <h3>Você sabe quais documentos são necessários para uma admissão?</h3>
+                <p>Para uma admissão tranquila, é essencial garantir que toda a documentação esteja em ordem. Confira o checklist detalhado com todos os documentos obrigatórios que você precisa ter em mãos.</p>
+                <a href="artigo3.html" class="read-more">Leia mais</a>
+            </div>
+        </div>
+    </section> 
+    <section class="contact-info">
+        <div class="contact-container">
+            <div class="address">
+                <h2>Endereço</h2>
+                <p>Rua Lolo Araújo, 145 - Santa Lúcia 1, Bom Despacho - MG, 35600-000</p>
+            </div>
+            <div class="social-media">
+                <h2>Redes Sociais</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/contabilidadenewsolutions?igsh=NmZyN25teXBwNjFk" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Outras Informações</h2>
+                <p>Email: patriciasuelen1205@gmail.com</p>
+                <p>Telefone: (37) 99834-0182</p>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer">
             <p>&copy; <strong>2024 Contabilidade New Solutions. Todos os direitos reservados.</strong></p>
