@@ -327,14 +327,14 @@ button:hover {
     display: flex; /* Usa flexbox para o layout padrão */
     justify-content: space-between; /* Espaça os itens com espaço igual entre eles */
     align-items: center; /* Alinha os itens verticalmente ao centro */
-    padding: 15px;
+    padding: 10px;
     background-color: #fff;
     box-sizing: border-box;
-    gap: 400px; /* Espaçamento entre o texto e a imagem */
+    gap: 200px; /* Espaçamento entre o texto e a imagem */
 }
 
 .owner-photo {
-    flex: 1; /* Faz com que a imagem ocupe o espaço restante */
+    flex-shrink: 0; /* Impede que a foto encolha */
 }
 
 .owner-photo img {
@@ -342,6 +342,7 @@ button:hover {
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 8px;
     max-width: 400px; /* Define uma largura máxima para a imagem */
+    margin-right: 100px;
 }
 
 .owner-info {
@@ -353,6 +354,7 @@ button:hover {
     text-align: center;
     font-size: 40px; /* Tamanho da fonte do título */
     color: #111733; /* Cor do título */
+    padding: 20px;
 }
 
 .owner-info p {
@@ -376,29 +378,52 @@ button:hover {
 }
 
 .services-container {
-    display: flex; /* Usa flexbox para layout dos quadros */
-    justify-content: center; /* Centraliza os quadros horizontalmente */
-    gap: 60px; /* Espaçamento entre os quadros */
-    flex-wrap: wrap; /* Permite que os quadros se movam para a linha seguinte em telas menores */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define três colunas iguais */
+    gap: 1.5rem; /* Espaçamento entre os itens */
+    width: 100%; /* Garante que o container de serviços ocupe 100% da largura disponível */
+    grid-template-areas:
+        "item1 item2 item3"
+        "item4 item5 ."; /* Define a área dos itens para a segunda linha */
 }
 
+.service-item:nth-child(1) {
+    grid-area: item1;
+}
+
+.service-item:nth-child(2) {
+    grid-area: item2;
+}
+
+.service-item:nth-child(3) {
+    grid-area: item3;
+}
+
+.service-item:nth-child(4) {
+    grid-area: item4;
+}
+
+.service-item:nth-child(5) {
+    grid-area: item5;
+}
+
+/* Adiciona um estilo opcional para garantir que a aparência dos itens de serviço se ajuste */
 .service-item {
-    background-color: #fff; /* Cor de fundo dos quadros */
-    border-radius: 8px; /* Bordas arredondadas dos quadros */
-    padding: 20px; /* Espaçamento interno dos quadros */
-    flex: 1; /* Permite que os quadros se ajustem ao espaço disponível */
-    max-width: 300px; /* Largura máxima dos quadros */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .service-item h3 {
-    font-size: 22px; /* Tamanho do título do quadro */
-    margin-bottom: 10px; /* Espaçamento abaixo do título do quadro */
-    color: #111733;
+    margin-top: 0;
+    color: #111733; /* Cor para o título, pode ajustar conforme necessário */
+    font-size: 25px;
 }
 
 .service-item p {
-    font-size: 16px; /* Tamanho da fonte do texto dos quadros */
+    font-size: 18px; /* Tamanho da fonte do texto dos quadros */
     line-height: 1.5; /* Altura da linha para melhor legibilidade */
     color: #111733;
 }
@@ -683,6 +708,7 @@ button:hover {
     .owner-photo img {
         width: 80%; /* Ajusta a largura da imagem */
         max-width: 400px; /* Define uma largura máxima para a imagem */
+        margin-right: 0;
     }
 
     .banner img {
@@ -708,8 +734,13 @@ button:hover {
     }
 
     .services-container {
-        display: grid;
-        gap: 15px; /* Ajusta o espaçamento entre os quadros */
+        grid-template-columns: 1fr; /* Uma coluna para telas pequenas */
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"; /* Cada item ocupa uma linha completa */
     }
 
     .services h2 {
