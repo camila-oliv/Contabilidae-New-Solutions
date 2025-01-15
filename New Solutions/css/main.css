@@ -121,7 +121,7 @@ nav ul li a {
 
 #sobre-nos {
     align-items: center; /* Centraliza verticalmente o conteúdo */
-    text-align: left; /* Centraliza o texto dentro do contêiner */*/
+    text-align: left; /* Centraliza o texto dentro do contêiner */
 }
 
 .secao {
@@ -270,7 +270,7 @@ button:hover {
 
 .banner img {
     width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
+    height: 90%; /* Mantém a proporção da imagem */
     position: absolute; /* Permite que a imagem fique atrás dos outros elementos */
     top: 0;
     left: 0;
@@ -462,7 +462,7 @@ button:hover {
 .contact-info {
     background-color: #1d264b; /* Azul escuro */
     color: #ffffff; /* Texto branco para contraste */
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -537,7 +537,7 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     width: 100%; /* Ajusta a largura do artigo para ocupar toda a largura disponível */
     max-width: 500px; /* Define uma largura máxima para garantir que o artigo não fique muito largo */
-    height: 500px; /* Define uma altura fixa para criar uma forma quadrada */
+    height: 570px; /* Define uma altura fixa para criar uma forma quadrada */
     display: flex;
     flex-direction: column; /* Alinha os itens em coluna */
     justify-content: center; /* Centraliza o conteúdo verticalmente */
@@ -803,6 +803,10 @@ button:hover {
     
         .address p, .social-media p, .contact p {
             font-size: 14px; /* Reduz o tamanho do texto do parágrafo em telas menores */
+        }
+
+        .titulo {
+            margin-bottom: 20px;
         }
 
 }

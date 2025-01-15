@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidade New Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/neo-solutions.png" alt="Logo da Contabilidade New Solutions">
+                </a>
+            </div>
+            <div class="header-content">
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">AGENDE SEU HORÁRIO</a></li>
+                        <li><a href="#servicos">SERVIÇOS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+    
+            menuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+            });
+        });
+    </script>
+    <section id="sobre-nos">
+        <div class="form-container">
+            <h1 class="titulo">Agende seu horário</h1>
+            <form action="enviar.php" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Data e horário:</label>
+                    <input type="datetime-local" id="assunto" name="assunto" required>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <section class="contact-info">
+        <div class="contact-container">
+            <div class="address">
+                <h2>Endereço</h2>
+                <p>Rua Lolo Araújo, 145 - Santa Lúcia 1, Bom Despacho - MG, 35600-000</p>
+            </div>
+            <div class="social-media">
+                <h2>Redes Sociais</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/contabilidadenewsolutions?igsh=NmZyN25teXBwNjFk" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Outras Informações</h2>
+                <p>Email: patriciasuelen1205@gmail.com</p>
+                <p>Telefone: (37) 99834-0182</p>
+            </div>
+        </div>
+    </section>  
+    <footer>
+        <div class="footer">
+            <p>&copy; <strong>2024 Contabilidade New Solutions. Todos os direitos reservados.</strong></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
